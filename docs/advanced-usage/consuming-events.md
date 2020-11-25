@@ -26,6 +26,13 @@ The event has two public properties:
 - `media`: the `\Spatie\MediaLibrary\Models\Media`-object of which a conversion has been completed
 - `conversion`: the conversion (an instance of `\Spatie\MediaLibrary\Conversion\Conversion`) that has just been completed
 
+### ResponsiveImagesGenerated
+This event is fired when a all responsive images have been generated.
+
+The event has one public property:
+
+- `model`:  the object that conforms to `\Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia` of which the responsive images have just been generated.
+
 ### CollectionHasBeenCleared
 This event will be fired after a collection has been cleared.
 
